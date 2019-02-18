@@ -223,7 +223,7 @@ bool Class::activate()
     for (int i = 0; i < aliases.size(); i++)
     {
         string alias = aliases[i];
-        if (zend_register_class_alias_ex(alias.c_str(), alias.length(), ce) < 0)
+        if (zend_register_class_alias_ex(alias.c_str(), alias.length(), ce ,PHPX_PERSISTENT_STRING) < 0)
         {
             return false;
         }
