@@ -60,6 +60,8 @@ typedef unsigned char uchar;
 
 #define PHPX_MAX_ARGC        10
 #define PHPX_VAR_DUMP_LEVEL  10
+//php7.3时版本默认设置内存申请方式- 1.临时 0永久
+#define PHPX_PERSISTENT_STRING 1
 
 namespace php
 {
